@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "Пакетная выгрузка кадастровых кварталов по охвату"
+authors = ["Prokhor <prokhor-2000@mail.ru>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.2"}
+aiosqlite = "^0.20.0"
+sqlalchemy = "^2.0.35"
+requests = "^2.32.3"
+geopandas = "^1.0.1"
+celery = "^5.4.0"
+flower = "^2.0.1"
+redis = "^5.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

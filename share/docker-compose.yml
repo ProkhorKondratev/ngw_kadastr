@@ -1,0 +1,16 @@
+name: ngw_kad
+services:
+  backend:
+    container_name: backend
+    image: ngw_kad:1.0.0
+    volumes:
+      - ./project/uploaded:/usr/src/app/data/uploaded
+      - ./project/results:/usr/src/app/data/results
+      - ./project/database:/usr/src/app/data/database
+      - ./project/logs:/usr/src/app/data/logs
+      - ./project/temp:/usr/src/app/data/temp
+    ports:
+      - "${WEB_PORT}:8000"
+      - "${FLOWER_PORT}:5555"
+    env_file:
+      - .env

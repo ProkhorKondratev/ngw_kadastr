@@ -1,0 +1,69 @@
+.theme-switch {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.alert-wrapper{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.btn-primary, .pagination .page-link, .btn-primary {
+    background-color: #c7c7c7;
+    border-color: transparent;
+    color: #212529;
+}
+
+.btn-primary:hover, .pagination .page-link:hover, .btn-primary:hover {
+    background-color: #9a9a9a;
+    border-color: transparent;
+    color: #212529;
+}
+
+.dataTables_wrapper .dataTable tbody td {
+    vertical-align: baseline;
+}
+
+.dataTables_wrapper .dataTable thead th {
+    vertical-align: middle;
+}
+
+#dropZone {
+    border: 2px dashed #0087F7;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: auto;
+    min-height: 250px;
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#dropZone.hover {
+    border: 2px solid #0087F7;
+    transform: scale(1.025);
+    color: #0087F7;
+}
+
+#selectedFiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card.file-block {
+    flex: 1 0 calc(33.333% - 10px);
+}
+
+.dt-fade-out {
+  animation: fadeOutAnimation 300ms forwards; /* Анимация длится 1 секунду */
+}
+
+@keyframes fadeOutAnimation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
