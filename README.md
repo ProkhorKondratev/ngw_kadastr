@@ -21,7 +21,7 @@
 ## Установка
 1. Клонируйте репозиторий и перейдите в каталог проекта:
     ```bash
-    git clone 
+    git clone https://github.com/ProkhorKondratev/ngw_kadastr.git
     cd ngw_kadastr
     ```
 
